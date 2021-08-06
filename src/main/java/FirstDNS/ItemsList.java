@@ -1,4 +1,4 @@
-package FirstTestDNS;
+package FirstDNS;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,14 +14,14 @@ public class ItemsList extends BasePage {
 
     //Находим элементы
     @FindBy(xpath = "//button[text()='Купить']")
-    WebElement AddToBasketBtn;
+    public static WebElement AddToBasketBtn;
     @FindBy(xpath = "//div[@data-code='1159493']")
-    WebElement finalItemLabel;
+    public static WebElement finalItemLabel;
     @FindBy(xpath = "//span[@class=\"cart-link__lbl\"]")
-    WebElement basketBtn;
+    public static WebElement basketBtn;
 
 
-    public void choseItem() {
+    public static void choseItem() {
         AddToBasketBtn.click();
         id = 1159493;
     }

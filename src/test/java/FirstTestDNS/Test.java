@@ -1,6 +1,6 @@
 package FirstTestDNS;
 
-
+import FirstDNS.*;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.opera.OperaDriver;
@@ -8,21 +8,15 @@ import java.util.concurrent.TimeUnit;
 
 public class Test {
 
-    public static MainPage mainPage;
-    public static AutoCat autoCat;
-    public static AutoSoundCat autoSoundCat;
-    public static ItemsList itemsList;
-    public static BasketPage basketPage;
-
     @BeforeClass
     public static void setup() {
         System.setProperty("webdriver.opera.driver",ConfProperties.getProperty("operadriver"));
         WebDriver driver = new OperaDriver();
-        mainPage = new MainPage(driver);
-        autoCat = new AutoCat(driver);
-        autoSoundCat = new AutoSoundCat(driver);
-        itemsList = new ItemsList(driver);
-        basketPage = new BasketPage(driver);
+        MainPage mainPage = new MainPage(driver);
+        AutoCat autoCat = new AutoCat(driver);
+        AutoSoundCat autoSoundCat = new AutoSoundCat(driver);
+        ItemsList itemsList = new ItemsList(driver);
+        BasketPage basketPage = new BasketPage(driver);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(ConfProperties.getProperty("page"));
@@ -30,12 +24,12 @@ public class Test {
     
     @org.junit.Test
     public void mainTest() {
-        BasePage.nextPage(mainPage.autoCatLink);
-        BasePage.nextPage(autoCat.autoSoundCatLink);
-        BasePage.nextPage(autoSoundCat.autoBarCatLink);
-        itemsList.choseItem();
-        BasePage.nextPage(itemsList.basketBtn);
-        basketPage.checkBasket();
+        BasePage.nextPage(MainPage.autoCatLink);
+        BasePage.nextPage(AutoCat.autoSoundCatLink);
+        BasePage.nextPage(AutoSoundCat.autoBarCatLink);
+        ItemsList.choseItem();
+        BasePage.nextPage(ItemsList.basketBtn);
+        BasketPage.checkBasket();
 
 
     }

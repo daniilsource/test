@@ -1,22 +1,19 @@
-package FirstTestDNS;
+package FirstDNS;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class AutoSoundCat extends BasePage {
+public class MainPage extends BasePage {
 
     //Конструктор
-    public AutoSoundCat(WebDriver driver) {
+    public MainPage(WebDriver driver) {
         super(driver);
     }
     //Находим элемент
-    @FindBy(xpath = "//span[text()='Автомагнитолы']")
-    WebElement autoBarCatLink;
-
+    @FindBy(xpath = "//*[contains(text(),'Автотовары')]")
+    public static WebElement autoCatLink;
 
 
 }
-
-
 

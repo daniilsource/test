@@ -1,4 +1,4 @@
-package FirstTestDNS;
+package FirstDNS;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

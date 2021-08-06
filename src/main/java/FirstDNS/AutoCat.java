@@ -1,4 +1,4 @@
-package FirstTestDNS;
+package FirstDNS;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,7 +12,7 @@ public class AutoCat extends BasePage {
     }
     //Находим элемент.
     @FindBy(xpath = "//span[text()='Автозвук']")
-    WebElement autoSoundCatLink;
+    public static WebElement autoSoundCatLink;
 
 
 }

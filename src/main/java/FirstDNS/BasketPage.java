@@ -1,4 +1,4 @@
-package FirstTestDNS;
+package FirstDNS;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
@@ -13,9 +13,9 @@ public class BasketPage extends BasePage {
     }
     //Находим элементы
     @FindBy(xpath = "//div[@class=\"cart-items__product-code\"]")
-    WebElement itemResult;
+    public static WebElement itemResult;
 
-    public void checkBasket() {Assert.assertEquals("1159493",itemResult.getText());}
+    public static void checkBasket() {Assert.assertEquals("1159493",itemResult.getText());}
 
 
 
