@@ -13,7 +13,7 @@ public class MainPage2 {
         this.driver = driver;
     }
 
-    @FindBy(xpath = "/html/body/div[1]/div[1]/a[2]/div[1]/span")
+    @FindBy(xpath = "//span[text()='Автозвук']")
     private WebElement autoCategory2;
 
     public void goNext2() {
