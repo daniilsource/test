@@ -4,21 +4,18 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-public class BasketPage {
+public class BasketPage extends BasePage {
 
-
-    public WebDriver driver;
+    //Конструктор
     public BasketPage(WebDriver driver) {
-        PageFactory.initElements(driver,this);
-        this.driver = driver;
+        super(driver);
     }
-
+    //Находим элементы
     @FindBy(xpath = "//div[@class=\"cart-items__product-code\"]")
     WebElement itemResult;
 
-    public void isHas() {Assert.assertEquals("1159493",itemResult.getText());}
+    public void checkBasket() {Assert.assertEquals("1159493",itemResult.getText());}
 
 
 

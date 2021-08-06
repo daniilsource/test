@@ -4,16 +4,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class MainPage extends BasePage {
+public class AutoSoundCat extends BasePage {
 
     //Конструктор
-    public MainPage(WebDriver driver) {
+    public AutoSoundCat(WebDriver driver) {
         super(driver);
     }
     //Находим элемент
-    @FindBy(xpath = "//*[contains(text(),'Автотовары')]")
-    WebElement autoCatLink;
+    @FindBy(xpath = "//span[text()='Автомагнитолы']")
+    WebElement autoBarCatLink;
+
 
 
 }
+
+
 
