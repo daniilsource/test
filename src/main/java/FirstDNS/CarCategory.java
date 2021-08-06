@@ -4,10 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class AutoCat extends BasePage {
+public class CarCategory extends BasePage {
 
     //Конструктор.
-    public AutoCat(WebDriver driver) {
+    public CarCategory(WebDriver driver) {
         super(driver);
     }
     //Находим элемент.

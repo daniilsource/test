@@ -7,11 +7,11 @@ public class Test extends BaseTest {
     
     @org.junit.Test
     public void mainTest() {
-        BasePage.nextPage(MainPage.autoCatLink);
-        BasePage.nextPage(AutoCat.autoSoundCatLink);
-        BasePage.nextPage(AutoSoundCat.autoBarCatLink);
-        ItemsList.choseItem();
-        BasePage.nextPage(ItemsList.basketBtn);
+        MainPage.click(MainPage.autoCatLink);
+        CarCategory.click(CarCategory.autoSoundCatLink);
+        CarSoundCategory.click(CarSoundCategory.autoBarCatLink);
+        SoundBarList.choseItem();
+        SoundBarList.click(SoundBarList.basketBtn);
         BasketPage.checkBasket();
 
     }

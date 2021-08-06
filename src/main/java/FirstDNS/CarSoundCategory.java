@@ -4,10 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class AutoSoundCat extends BasePage {
+public class CarSoundCategory extends BasePage {
 
     //Конструктор
-    public AutoSoundCat(WebDriver driver) {
+    public CarSoundCategory(WebDriver driver) {
         super(driver);
     }
     //Находим элемент

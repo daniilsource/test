@@ -13,9 +13,9 @@ public class BaseTest {
         System.setProperty("webdriver.opera.driver",ConfProperties.getProperty("operadriver"));
         WebDriver driver = new OperaDriver();
         MainPage mainPage = new MainPage(driver);
-        AutoCat autoCat = new AutoCat(driver);
-        AutoSoundCat autoSoundCat = new AutoSoundCat(driver);
-        ItemsList itemsList = new ItemsList(driver);
+        CarCategory carCategory = new CarCategory(driver);
+        CarSoundCategory carSoundCategory = new CarSoundCategory(driver);
+        SoundBarList soundBarList = new SoundBarList(driver);
         BasketPage basketPage = new BasketPage(driver);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

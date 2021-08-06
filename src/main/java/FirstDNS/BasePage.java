@@ -13,7 +13,7 @@ public class BasePage {
     }
 
     //Метод next
-    public static void nextPage(WebElement element) {
+    public static void click(WebElement element) {
         element.click();
     }
 

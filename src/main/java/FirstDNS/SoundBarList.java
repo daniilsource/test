@@ -4,10 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class ItemsList extends BasePage {
+public class SoundBarList extends BasePage {
 
     //Конструктор
-    public ItemsList(WebDriver driver) {
+    public SoundBarList(WebDriver driver) {
         super(driver);
     }
     public static int id;
