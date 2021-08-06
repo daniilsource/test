@@ -13,7 +13,6 @@ public class Test {
     public static AutoSoundCat autoSoundCat;
     public static ItemsList itemsList;
     public static BasketPage basketPage;
-    public static WebDriver driver;
 
     @BeforeClass
     public static void setup() {
