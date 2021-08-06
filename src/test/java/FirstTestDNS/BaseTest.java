@@ -8,24 +8,17 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
-    //public static MainPage mainPage;
-    public static AutoCat autoCat;
-    public static AutoSoundCat autoSoundCat;
-    public static ItemsList itemsList;
-    public static BasketPage basketPage;
-
     @BeforeClass
     public static void setup() {
         System.setProperty("webdriver.opera.driver",ConfProperties.getProperty("operadriver"));
         WebDriver driver = new OperaDriver();
-        //mainPage = new MainPage(driver);
-        autoCat = new AutoCat(driver);
-        autoSoundCat = new AutoSoundCat(driver);
-        itemsList = new ItemsList(driver);
-        basketPage = new BasketPage(driver);
+        MainPage mainPage = new MainPage(driver);
+        AutoCat autoCat = new AutoCat(driver);
+        AutoSoundCat autoSoundCat = new AutoSoundCat(driver);
+        ItemsList itemsList = new ItemsList(driver);
+        BasketPage basketPage = new BasketPage(driver);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(ConfProperties.getProperty("page"));
-
     }
 }
