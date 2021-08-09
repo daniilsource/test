@@ -4,15 +4,28 @@ import FirstDNS.WebDriverProvider;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 
+/**
+ * Базовый тестовый класс
+ * Производит запуск, настройку, и завершение работы драйвера.
+ */
+public class BaseTest {
 
-public class BaseTest extends WebDriverProvider {
-
+    /**
+     * Метод выполняющийся перед основным классом.
+     * Производит настройку драйвера, создавая экземпляр класса.
+     */
     @BeforeClass
     public static void setup() {
-        WebDriverProvider.driverStart();
+        WebDriverProvider.getInstance();
     }
+
+    /**
+     * Метод, вступает в работу после основного теста.
+     * Закрывает вебдрайвер и браузер.
+     */
     @AfterClass
     public static void close() {
-        WebDriverProvider.driver.quit();
+        WebDriverProvider.getDriver().quit();
+
     }
 }
