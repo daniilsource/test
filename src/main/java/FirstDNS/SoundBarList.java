@@ -1,18 +1,12 @@
 package FirstDNS;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class SoundBarList extends BasePage {
 
-    //Конструктор
-    public SoundBarList() {
-        super();
-    }
     public static int id;
 
-    //Находим элементы
     @FindBy(xpath = "//button[text()='Купить']")
     public static WebElement AddToBasketBtn;
     @FindBy(xpath = "//div[@data-code='1159493']")

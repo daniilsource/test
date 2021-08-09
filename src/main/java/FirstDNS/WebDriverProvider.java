@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import java.util.concurrent.TimeUnit;
 
-public class DriverStart {
+public class WebDriverProvider {
 
     public static WebDriver driver;
 

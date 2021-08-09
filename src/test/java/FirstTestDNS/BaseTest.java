@@ -1,18 +1,18 @@
 package FirstTestDNS;
 
-import FirstDNS.DriverStart;
+import FirstDNS.WebDriverProvider;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 
 
-public class BaseTest extends DriverStart {
+public class BaseTest extends WebDriverProvider {
 
     @BeforeClass
     public static void setup() {
-        DriverStart.driverStart();
+        WebDriverProvider.driverStart();
     }
     @AfterClass
     public static void close() {
-        DriverStart.driver.quit();
+        WebDriverProvider.driver.quit();
     }
 }
