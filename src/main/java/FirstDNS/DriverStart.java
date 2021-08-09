@@ -1,4 +1,4 @@
-package FirstTestDNS;
+package FirstDNS;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.opera.OperaDriver;
@@ -14,6 +14,7 @@ public class DriverStart {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(ConfProperties.getProperty("page"));
+
     }
 
     public static WebDriver getDriver() {

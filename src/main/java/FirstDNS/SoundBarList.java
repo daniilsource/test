@@ -7,8 +7,8 @@ import org.openqa.selenium.support.FindBy;
 public class SoundBarList extends BasePage {
 
     //Конструктор
-    public SoundBarList(WebDriver driver) {
-        super(driver);
+    public SoundBarList() {
+        super();
     }
     public static int id;
 

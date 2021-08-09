@@ -7,8 +7,8 @@ import org.openqa.selenium.support.FindBy;
 public class MainPage extends BasePage {
 
     //Конструктор
-    public MainPage(WebDriver driver) {
-        super(driver);
+    public MainPage() {
+        super();
     }
     //Находим элемент
     @FindBy(xpath = "//*[contains(text(),'Автотовары')]")

@@ -8,8 +8,8 @@ import org.openqa.selenium.support.FindBy;
 public class BasketPage extends BasePage {
 
     //Конструктор
-    public BasketPage(WebDriver driver) {
-        super(driver);
+    public BasketPage() {
+        super();
     }
     //Находим элементы
     @FindBy(xpath = "//div[@class=\"cart-items__product-code\"]")

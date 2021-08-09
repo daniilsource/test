@@ -7,11 +7,11 @@ public class Test extends BaseTest {
     
     @org.junit.Test
     public void mainTest() {
-        new MainPage(getDriver());
-        new CarCategory(getDriver());
-        new CarSoundCategory(getDriver());
-        new SoundBarList(getDriver());
-        new BasketPage(getDriver());
+        new MainPage();
+        new CarCategory();
+        new CarSoundCategory();
+        new SoundBarList();
+        new BasketPage();
         MainPage.click(MainPage.autoCatLink);
         CarCategory.click(CarCategory.autoSoundCatLink);
         CarSoundCategory.click(CarSoundCategory.autoBarCatLink);

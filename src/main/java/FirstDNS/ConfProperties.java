@@ -1,4 +1,4 @@
-package FirstTestDNS;
+package FirstDNS;
 
 import java.io.FileInputStream;
 import java.io.IOException;

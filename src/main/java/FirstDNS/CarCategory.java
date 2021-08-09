@@ -7,8 +7,8 @@ import org.openqa.selenium.support.FindBy;
 public class CarCategory extends BasePage {
 
     //Конструктор.
-    public CarCategory(WebDriver driver) {
-        super(driver);
+    public CarCategory() {
+        super();
     }
     //Находим элемент.
     @FindBy(xpath = "//span[text()='Автозвук']")
