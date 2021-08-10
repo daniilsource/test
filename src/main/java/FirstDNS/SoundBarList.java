@@ -1,5 +1,6 @@
 package FirstDNS;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -24,7 +25,9 @@ public class SoundBarList extends BasePage {
     @FindBy(xpath = "//span[@class=\"cart-link__lbl\"]")
     public static WebElement basketBtn;
 
+
     /** Метод, выполняет клик по кнопке и присваивает уникальный ID элемента. */
+
     public static void choseItem() {
         AddToBasketBtn.click();
         id = 1159493;

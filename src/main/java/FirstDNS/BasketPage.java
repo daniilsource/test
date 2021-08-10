@@ -3,6 +3,7 @@ package FirstDNS;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import io.qameta.allure.Step;
 
 /**
  * Класс описывающий элементы страницы Корзины.
@@ -21,6 +22,7 @@ public class BasketPage extends BasePage {
      * С товаром, который мы добавляли
      * В качестве параметров принимает Ожидаемый ID и Гетает ID у элемента в корзине.
      */
+
     public static void checkBasket() {Assert.assertEquals("1159492",itemResult.getText());}
 
 
