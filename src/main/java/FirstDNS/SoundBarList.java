@@ -27,7 +27,7 @@ public class SoundBarList extends BasePage {
 
 
     /** Метод, выполняет клик по кнопке и присваивает уникальный ID элемента. */
-
+    @Step("Выбираем жлементе")
     public static void choseItem() {
         AddToBasketBtn.click();
         id = 1159493;

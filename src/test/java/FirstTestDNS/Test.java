@@ -1,6 +1,7 @@
 package FirstTestDNS;
 
 import FirstDNS.*;
+import io.qameta.allure.Step;
 
 /**
  * Основной тестовый класс.

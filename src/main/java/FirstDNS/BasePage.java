@@ -24,7 +24,7 @@ public class BasePage {
      * Метод делает клик по переданному в качестве параметра элементу страницы
      * @param element - элемент страницы
      */
-
+    @Step("Что то там")
     public static void click(WebElement element) {
         element.click();
     }

@@ -22,7 +22,7 @@ public class BasketPage extends BasePage {
      * С товаром, который мы добавляли
      * В качестве параметров принимает Ожидаемый ID и Гетает ID у элемента в корзине.
      */
-
+    @Step("Проверка корзины")
     public static void checkBasket() {Assert.assertEquals("1159492",itemResult.getText());}
 
 
