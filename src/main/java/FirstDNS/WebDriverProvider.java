@@ -1,5 +1,6 @@
 package FirstDNS;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import java.util.concurrent.TimeUnit;
@@ -30,6 +31,7 @@ public class WebDriverProvider {
     }
 
     /** Метод создающий экземпляр класса при необходимости. Возвращает этот экземпляр */
+    @Step("Создаём объект драйвера")
     public static WebDriverProvider getInstance() {
         if (INSTANCE == null) {
             INSTANCE = new WebDriverProvider();
@@ -37,6 +39,7 @@ public class WebDriverProvider {
         return INSTANCE;
     }
     /** Метод Геттер для драйвера. Возвращает драйвер. */
+    @Step("Получаем драйвер")
     public static WebDriver getDriver() {
         return WebDriverProvider.driver;
     }

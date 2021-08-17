@@ -27,7 +27,7 @@ public class SoundBarList extends BasePage {
 
 
     /** Метод, выполняет клик по кнопке и присваивает уникальный ID элемента. */
-    @Step("Выбираем жлементе")
+    @Step("Добавляем элемент из списка в корзину")
     public static void choseItem() {
         AddToBasketBtn.click();
         id = 1159493;
@@ -39,6 +39,3 @@ public class SoundBarList extends BasePage {
 
 
 }
-
-
-// код магнитолы 1159493
