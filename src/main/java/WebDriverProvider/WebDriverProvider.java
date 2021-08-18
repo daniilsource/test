@@ -1,4 +1,4 @@
-package FirstDNS;
+package WebDriverProvider;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
@@ -16,18 +16,19 @@ public class WebDriverProvider {
     /** Объявление полей Объекта страницы и WebDriver'a */
    private static WebDriverProvider INSTANCE;
    private static WebDriver driver;
+   private static String page;
 
     /**
-     * Приватный конструктор WebDriver
+     * Приватный конструктор WebDriver.
      * Производит инициализацию драйвера, его настройку
-     * Берет необходимые данные из пропети файла.
+     * Берет необходимые данные из property файла.
      */
     private WebDriverProvider() {
-        System.setProperty("webdriver.opera.driver",ConfProperties.getProperty("operadriver"));
+        System.setProperty("webdriver.opera.driver", ConfProperties.getProperty("operadriver"));
         driver = new OperaDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get(ConfProperties.getProperty("page"));
+        driver.get(ConfProperties.getProperty("page2"));
     }
 
     /** Метод создающий экземпляр класса при необходимости. Возвращает этот экземпляр */

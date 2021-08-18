@@ -1,5 +1,6 @@
 package FirstDNS;
 
+import WebDriverProvider.WebDriverProvider;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -24,7 +25,7 @@ public class BasePage {
      * Метод делает клик по переданному в качестве параметра элементу страницы
      * @param element - элемент страницы
      */
-    @Step("Метод клик")
+    @Step("Метод клик по"  )
     public static void click(WebElement element) {
         element.click();
     }

@@ -1,7 +1,6 @@
 package FirstTestDNS;
 
 import FirstDNS.*;
-import io.qameta.allure.Step;
 
 /**
  * Основной тестовый класс.
@@ -20,6 +19,7 @@ public class Test extends BaseTest {
         new CarSoundCategory();
         new SoundBarList();
         new BasketPage();
+
         MainPage.click(MainPage.autoCatLink);
         CarCategory.click(CarCategory.autoSoundCatLink);
         CarSoundCategory.click(CarSoundCategory.autoBarCatLink);

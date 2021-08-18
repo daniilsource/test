@@ -1,4 +1,4 @@
-package FirstDNS;
+package WebDriverProvider;
 
 import java.io.FileInputStream;
 import java.io.IOException;

@@ -1,6 +1,6 @@
 package FirstTestDNS;
 
-import FirstDNS.WebDriverProvider;
+import WebDriverProvider.WebDriverProvider;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 
