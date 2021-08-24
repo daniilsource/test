@@ -13,7 +13,7 @@ public class MainPage extends BasePage {
      * Ссылка на категорию АВТОТОВАРЫ
      */
     @FindBy(xpath = "//*[contains(text(),'Автотовары')]")
-    public static WebElement autoCatLink;
+    public WebElement autoCatLink;
 
 
 }

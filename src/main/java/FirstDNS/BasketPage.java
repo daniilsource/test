@@ -14,7 +14,7 @@ public class BasketPage extends BasePage {
      * Инициализация товара в корзине в качестве веб элемента через XPATH
      */
     @FindBy(xpath = "//div[@class=\"cart-items__product-code\"]")
-    public static WebElement itemResult;
+    public WebElement itemResult;
 
     /**
      * Финальная проверка на соответствие.
@@ -23,7 +23,7 @@ public class BasketPage extends BasePage {
      * В качестве параметров принимает Ожидаемый ID и Гетает ID у элемента в корзине.
      */
     @Step("Проверка наличия товара в корзине")
-    public static void checkBasket() {Assert.assertEquals("1159492",itemResult.getText());}
+    public void checkBasket(int id) {Assert.assertEquals("1159492",itemResult.getText());}
 
 
 

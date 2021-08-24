@@ -26,7 +26,7 @@ public class BasePage {
      * @param element - элемент страницы
      */
     @Step("Метод клик по"  )
-    public static void click(WebElement element) {
+    public void click(WebElement element) {
         element.click();
     }
 

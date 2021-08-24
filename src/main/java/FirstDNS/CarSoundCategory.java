@@ -13,7 +13,7 @@ public class CarSoundCategory extends BasePage {
      * Ссылка на категорию Автомагнитолы
      */
     @FindBy(xpath = "//span[text()='Автомагнитолы']")
-    public static WebElement autoBarCatLink;
+    public WebElement autoBarCatLink;
 
 
 
